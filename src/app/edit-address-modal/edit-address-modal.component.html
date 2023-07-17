@@ -1,0 +1,49 @@
+<div class="popup-adicionar-bg" >
+    <div class="popup-container">
+        <div class="popup-header">
+            <div class="close-button-container">                             
+                <button id="close-popup-add" class="close-button"> <img src="assets/close.svg" width="15px" class="mr-1"></button>
+            </div>   
+            <div class="popup-title">Adicionar Endereço</div>
+        </div>
+        <div class="borda"></div>
+        <div class="content-container">
+            <!-- form -->
+                <div class="form-container">                                                                                       
+                    <div class="cidade-input"> 
+                        <label class="required">Cidade</label>                                                            
+                    </div>
+                    <select class="dropdown-cidade">
+                        <option value="cidade1">Indaiatuba/SP</option>
+                        <option value="cidade2">Piracicaba/SP</option>            
+                    </select>                                                                
+                    
+                    <div class="logradouro-input">
+                        <label class="required">Rua, avenida, praça, travessa*</label>
+                        <input maxlength="100">
+                    </div>
+                    <div class="form-block">
+                        <div class="numero-input">
+                            <label class="required">Número*</label>
+                            <input maxlength="10">
+                        </div>                                            
+                        <div class="complemento-input">
+                            <label class="required">Complemento</label>
+                            <input maxlength="25">
+                        </div>
+                    </div>
+                    <div class="referencia-input">
+                        <label class="required">Ponto de referência?</label>
+                        <input maxlength="50">
+                    </div>
+                    <div class="bairro-input">
+                        <label class="required">Bairro*</label>
+                        <input maxlength="50"></div>                                                 
+                </div>
+            <div class="buttons-container">
+                <button id="save-button" class="button-action" (click)="closePopup()"><span>Salvar endereço</span></button>
+                <button id="voltar-tela-anterior" class="button-action" (click)="closePopup()" ><span>Voltar</span></button>
+            </div>
+        </div>
+    </div>  
+</div>      

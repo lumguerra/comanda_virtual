@@ -1,0 +1,376 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.background-top{
+    display: flex; 
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+    width: 100%;
+    min-width: 250px;    
+    height: 90px;    
+    background-color: rgb(0, 0, 0);
+}
+
+.background{   
+    display: flex; 
+    background-color: rgb(243, 245, 247);    
+    width: 100%;
+    min-width: 250px;
+    height: 100vh;    
+}
+
+.grid-area{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: flex; 
+    width: 800px;
+    min-width: 250px;
+    height: auto;
+    margin:auto;     
+    margin-top: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* CABEÇA */
+
+.pedido-header {  
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;  
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;  
+  }
+  
+.close-button-container{
+    width: 15px;
+    margin-left: 0;
+  }
+
+.close-button,.close-pop-up{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.close-button:hover{
+    opacity: 0.8;
+    transition: all 0.3s
+}
+
+.pedido-title{
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto;
+}
+
+section1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 250px;
+    margin: auto;       
+    border-radius: 8px 8px 0px 0px;    
+    background-color: rgb(243, 245, 247);;
+}
+
+.block-one{
+    display: flex; 
+    border-radius: 8px;
+}
+
+.block-container, .bottom-container{
+    display: flex;    
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.bottom-container{
+    border: none;
+    margin-bottom: 2px;
+}
+
+.sign-in-container{
+    margin: auto;
+    width: 100%;
+}
+
+.top-container{
+    background-color: white;
+}
+
+.top-container, .button-container{
+    display: flex;
+    width: 100%;    
+    align-items: center;
+}
+
+.iten-icon-container{
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url("/comanda/resoucers/IMG/shopping-bag.svg");
+    margin: 15px;
+}
+
+.adress-icon-container{
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url("/comanda/resoucers/IMG/Location_img.png");
+    margin: 20px 15px;
+}
+
+.text-container{
+    padding: 15px 50px 0 0;  
+    width: 100%;  
+}
+
+.item-and-price-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.iten-title, .price-title, .endereco-title{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(48, 51, 60);
+    margin-bottom: 15px;
+}
+
+.item-and-price-container-description{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price-list{
+    text-align: end;
+    white-space: nowrap;
+}
+
+.total-price-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;    
+}
+
+.option-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.line-container{
+    display: flex;
+    width: 100%;
+    padding: 2px 0;
+    align-items: ;
+}
+
+em{
+    color: rgb(107, 121, 134);
+    font-size: 12px;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border: solid;
+}
+
+.money-icon-container{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url("/comanda/resoucers/IMG/money.png");
+    margin: 20px 15px;
+}
+
+.money-line{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+.title-pagamento{
+    font-size: 13px;
+}
+
+.text-pagamento{
+    color: rgb(107, 121, 134);
+    font-size: 12px;
+}
+
+.text{
+    font-size: 13px;
+    line-height: 150%;
+}
+
+.borda{
+    width: auto;
+    height: 8px;   
+    background-image: linear-gradient(to bottom, rgb(198, 205, 212), rgb(243, 245, 247));
+    
+}
+/* Button */
+
+.button-container{
+    display: flex;    
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+    padding-bottom: 45px;
+}
+
+.button-adicionar-container, .button-entrar-container{
+    display: flex;    
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+}
+
+.block-container p{
+    color: rgb(107, 121, 134);
+    font-size: 12px;
+    padding: 15px 30px;
+    text-align: center;
+    
+}
+
+.block-container{
+    
+}
+
+.block-container-botton{
+    background-color: white;
+    margin-top: 2px;
+    padding: 15px 50px;
+}
+
+.button-voltar, .button-pagamento, .fazer-pedido-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin:0 50px;
+}
+
+.button-voltar:hover{
+    opacity: 0.8;
+    transition: all 0.3s
+}
+
+.button-pagamento{
+    margin: 0;
+}
+
+.button-pagamento:hover{
+    opacity: 0.8;
+    transition: all 0.3s
+}
+
+.fazer-pedido-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    max-width: 700px;
+}
+/* form */
+
+input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid rgb(146, 146, 146);
+}
+
+.form-container {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container label, .pagar-title{
+    margin-bottom: 4px;
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(48, 51, 60);
+    text-align: left;
+    line-height: 120%;    
+}
+
+.form-block{
+    display: flex;
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    
+}
+
+.info-container{
+    width: 100%;
+    padding-right: ;
+}
+
+.pagar-container{
+    display: flex;
+    background-color: white;
+    margin-top: 2px;
+    padding: 15px 50px 40px 0;
+}
+
+footer{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(48, 51, 60, 0.25) 0px -1px 2px;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="about.css">
+    <link href=<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">>
+    <script>
+        function goToHome() {
+            window.location.href = "home.component.html";
+        }
+    </script>
+</head>
+<body>    
+    <div class="background-top"></div>
+    <div class="background">
+        <div class="grid-area">
+            <!-- CABEÇA -->
+            <section1>
+                <div class="block-one">
+                    <div class="popup-header">
+                        <div class="close-button-container">                             
+                            <button onclick="goToHome()" id="close-pop-up" class="close-button"><svg width="16" height="16" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8328 6.82939H3.97417L7.82577 2.99422C8.04555 2.77471 8.16902 2.477 8.16902 2.16657C8.16902 1.85614 8.04555 1.55842 7.82577 1.33892C7.60599 1.11941 7.3079 0.996094 6.99709 0.996094C6.68628 0.996094 6.38819 1.11941 6.16841 1.33892L0.332654 7.16745C0.226396 7.27831 0.143102 7.40904 0.0875521 7.55213C-0.0291841 7.83594 -0.0291841 8.15426 0.0875521 8.43807C0.143102 8.58116 0.226396 8.71189 0.332654 8.82275L6.16841 14.6513C6.27691 14.7605 6.406 14.8473 6.54823 14.9064C6.69046 14.9656 6.84301 14.9961 6.99709 14.9961C7.15117 14.9961 7.30372 14.9656 7.44595 14.9064C7.58818 14.8473 7.71727 14.7605 7.82577 14.6513C7.93516 14.5429 8.02199 14.414 8.08125 14.2719C8.1405 14.1299 8.17101 13.9775 8.17101 13.8236C8.17101 13.6697 8.1405 13.5174 8.08125 13.3753C8.02199 13.2333 7.93516 13.1043 7.82577 12.996L3.97417 9.1608H12.8328C13.1424 9.1608 13.4393 9.03799 13.6581 8.81938C13.877 8.60077 14 8.30426 14 7.9951C14 7.68593 13.877 7.38943 13.6581 7.17082C13.4393 6.95221 13.1424 6.82939 12.8328 6.82939Z" fill="#30333C"></path></svg></button>
+                        </div>   
+                        <div class="popup-title">Sobre o restaurante</div>
+                    </div>               
+                </div>
+                
+                <div class="about-container">                           
+                    <div class="photo-container">
+                        <img class="restaurant-photo" src="/comanda/resoucers/IMG/img_restaurante.jpg" alt="foto do prato 1"> 
+                    </div>                                                    
+
+                    <div class="block-two">
+                        <div class="content-container">
+                            <!-- Horário de funcionamento -->
+                            <div class="block-container">
+                                <div class="clock-icon-container"></div>
+                                <div class="text-container">
+                                    <div class="endereco-title">Horário de funcionamento</div>
+                                    <div class="text">Todos os dias de 8:00 às 21:00 horas.<br>Horário de atendimento ao público: de 8:00 às 18:00 horas.</div>
+                                </div>
+                            </div>
+                            <!-- Endereço -->
+                            <div class="block-container">
+                                <div class="adress-icon-container"></div>
+                                <div class="text-container">
+                                    <div class="endereco-title">Endereço</div>
+                                    <div class="text">Avenida Ordem e Progresso, 1070<br>CEP:02518-140<br>Jardim das Laranjeiras, São Paulo/SP </div>
+                                </div>
+                            </div>
+                            <!-- Formas de pagamento -->
+                            <div class="block-container">
+                                <div class="money-icon-container"></div>
+                                <div class="text-container">
+                                    <div class="pagamento-title">Formas de pagamento</div>
+                                    <div class="formas-de-pagamento-container">
+                                        <div class="money-line">
+                                            <div class="title-pagamento">Débito</div>
+                                            <div class="text-pagamento">MasterCard, Maestro, Elo</div>  
+                                        </div>
+                                        <div class="money-line">
+                                            <div class="title-pagamento">Crédito</div>
+                                            <div class="text-pagamento">MasterCard, Maestro, Hipercard, American, Express, Diners Club, Elo</div> 
+                                        </div>
+                                        <div class="money-line">
+                                            <div class="title-pagamento">Dinheiro</div>
+                                            <div class="text-pagamento">Pagamento na entrega</div>
+                                        </div>                                                                                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="goToHome()" id="button-voltar" class="button-voltar"><span>Voltar</span></button>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="borda"></div>                     
+                </div>                                                             
+            </section1>   
+                             
+        </div>
+    </div>
+</body>
+</html>
+

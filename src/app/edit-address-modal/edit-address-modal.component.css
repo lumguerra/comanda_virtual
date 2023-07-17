@@ -1,0 +1,227 @@
+.popup-adicionar-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    min-width: 300px;
+    background-color: rgb(243, 245, 247);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .close-button-container {
+    width: 15px;
+    margin-left: 0;
+  }
+  
+  .close-button,
+  .close-pop-up {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+  
+  .popup-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto;
+  }
+  
+  .content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .cidade-input label.required {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 120%;
+    color: rgb(72, 84, 96);
+  }
+  
+  .dropdown-cidade {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid rgb(127, 143, 159);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .logradouro-input label.required {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 120%;
+    color: rgb(72, 84, 96);
+  }
+  
+  .logradouro-input input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 39px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(232, 234, 237);
+  }
+  
+  .form-block {
+    display: flex;
+  }
+  
+  .numero-input label.required {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 120%;
+    color: rgb(72, 84, 96);
+  }
+  
+  .numero-input input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 39px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(232, 234, 237);
+  }
+  
+  .complemento-input label.required {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 120%;
+    color: rgb(72, 84, 96);
+  }
+  
+  .complemento-input input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 39px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(232, 234, 237);
+  }
+  
+  .referencia-input label.required {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 120%;
+    color: rgb(72, 84, 96);
+  }
+  
+  .referencia-input input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 39px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(232, 234, 237);
+  }
+  
+  .bairro-input label.required {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 120%;
+    color: rgb(72, 84, 96);
+  }
+  
+  .bairro-input input {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 39px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(232, 234, 237);
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .button-action,
+  .close-pop-up {
+    width: 85%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .button-action:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+  

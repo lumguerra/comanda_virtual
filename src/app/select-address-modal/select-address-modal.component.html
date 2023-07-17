@@ -1,0 +1,32 @@
+<img src="assets/bike.svg" width="15px" class="mr-1">
+<!-- POP-UP SELECIONAR ENDEREÇO-->                                                                       
+<button class="button-pop-up" id="button-pop-up"  (click)="openPopup()">Selecione um endereço apra entrega</button>                        
+<div class="popup-bg">
+    <div class="popup-container">
+        <div class="popup-header">
+            <div class="close-button-container">                             
+                <button id="close-pop-up" class="close-button" (click)="closePopup()"><img src="assets/close.svg" width="15px" class="mr-1"></button>
+            </div>   
+            <div class="popup-title">Endereço de entrega</div>
+        </div>
+        <div class="borda"></div>
+        <div class="content-container">
+            <div class="adress-container">
+                <div class="adress-subcontainer">
+                    <div class="map-icon-container"></div>
+                    <div class="text-container">
+                        <div class="text">Avenida Ordem e Progresso, 1070<br>CEP:02518-140<br>Jardim das Laranjeiras, São Paulo/SP </div>
+                    </div>
+                </div> 
+                <div class="action-buttons-container">
+                    <div class="editar">botão editar</div>
+                    <div class="excluir">botão excluir</div>
+                </div>   
+            </div>
+            <div class="buttons-container">
+                <button id="adicionar-endereco" class="button-action" (click)="openAddAddressPopup()"><span>Adicionar novo endereço</span></button>
+                <button id="voltar" class="button-action" (click)="closePopup()"><span>Voltar</span></button>
+            </div>
+        </div>
+    </div>  
+</div> 

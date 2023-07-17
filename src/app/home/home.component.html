@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Comanda</title>
+    <link rel="stylesheet" href="home.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="home.js"></script>
+</head>
+<body>  
+    <div class="background-top"></div>
+    <div class="background">
+        <div class="grid-area">
+            <!-- HEADER  SECTION-->
+            <section class="section1">                
+                <div class="block-one">
+                    <div onclick="goToAbout()" class="logo-container"><p class="logo">Logo</p></div>
+                    <div class="title-container">
+                        <div class="title">Cardapio de demonstracao</div>
+                        <div class="sub-title">
+                            <i class="bi bi-0-circle-fill"></i>
+                            <img src="assets/knife-and-fork.svg" alt="Knife and Fork Icon" width="15px" class="mr-1">
+                            <p class="texto-head">Comida c\seira <u onclick="goToAbout()" class=" ver-mais">ver mais</u></p>                
+                        </div>                
+                    </div>                
+                </div>
+                <div class="block-two">
+                    <div class="line1">
+                        <img src="assets/clock.svg" width="15px" class="mr-1">
+                        <p class="text-line1">Aberta</p>
+                    </div>
+                    <div class="line2">
+                        <!-- MODAL SELECECIONAR ENDEREÇO -->
+                        <app-select-address-modal></app-select-address-modal>
+                        
+                        <!-- POP-UP ADICIONAR ENDEREÇO-->
+                        <app-edit-address-modal></app-edit-address-modal>                               
+                    </div>
+                </div>                                           
+            </section>
+
+            <div class="borda"></div>    
+            <!-- DROPDOWN MENU -->
+            <section class="section2">
+                <div class="search-container">
+                  <img src="assets/search.svg" alt="Knife and Fork Icon" width="15px" class="mr-1">
+                </div>
+                <select class="dropdown" id="daySelect" (change)="scrollToSection()">
+                  <option value="hamburguer">Hamburguer</option>
+                  <option value="sushi">Sushi</option>
+                  <option value="pizza">Pizza</option>
+                </select>
+            </section>
+              
+            
+            
+            <!-- BLOCO COMIDAS -->
+            <section class="Dia-da-semana" id="hamburguer">                
+                <h1>Hamburguer</h1>
+                <div class="items-container">
+                    <div onclick="goToFood()" id="copyButton" class="frame">
+                        <div id="sourceTitle1" class="item-info">
+                            <h2>Tack's salad</h2>
+                            <p>Pão selado na manteiga, queijo mussarela, hamburguer da casa,
+                                alface, tomate, milho, ervilha, pepino agridoce, maionese da casa
+                                + molho da casa separado.
+                            </p>
+                            <div class="price">R$ 16,00</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/burguer1.jpeg" alt="foto do prato 1"> 
+                    </div>
+                </div>
+
+
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Tack's bacon</h2>
+                            <p>Pão selado na manteiga, queijo mussarela, hamburguer da casa,
+                                tomate, pepino agridoce, maionese da casa e tiras de bacon +
+                                molho da casa separado.
+                                </p>
+                            <div class="price">R$ 18,00</div>
+                        </div>                                            
+                        <img src="/comanda/resoucers/IMG/burguer2.jpeg" alt="foto do prato 2"> 
+                    </div>
+                </div>
+                
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>food</h2>
+                            <p>Pão selado na manteiga, queijo mussarela, hamburguer da casa,
+                                maionese da casa + molho da casa separado</p>
+                            <div class="price">R$ 15,00</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/burguer3.jpeg" alt="foto do prato 3"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Tack'sburguer cheddar</h2>
+                            <p>Pão selado na manteiga, fatia queijo cheddar, hamburguer da
+                                casa, maionese da casa + molho da casa separado.
+                                </p>
+                            <div class="price">R$ 15,00</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/burguer4.jpeg" alt="foto do prato 4"> 
+                    </div>
+                </div>
+            </section>
+            <!-- BLOCO Sushi -->
+            <section class="Dia-da-semana" id="sushi">                
+                <h1>Sushi</h1>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Sushi de Salmão Fresco</h2>
+                            <p>Fatias de salmão fresco sobre uma base de arroz temperado, envolto em alga nori crocante.</p>
+                            <div class="price">R$ 12,00</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/sushi1.jpeg" alt="foto do prato 1"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Temaki de Atum Picante</h2>
+                            <p>Cone de alga nori recheado com arroz temperado, atum picante, pepino e cebolinha.</p>
+                            <div class="price">R$ 10,00</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/sushi2.jpeg" alt="foto do prato 2"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Uramaki California</h2>
+                            <p>Uramaki (sushi enrolado ao contrário) com recheio de kani, abacate e pepino, coberto com sementes de gergelim.</p>
+                            <div class="price">R$ 8,00 (unidade)</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/sushi3.jpeg" alt="foto do prato 3"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Niguiri de Camarão</h2>
+                            <p>Bolinho de arroz compacto coberto com fatia de camarão cozido e decorado com um toque de wasabi.</p>
+                            <div class="price">R$ 6,00 (unidade)</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/sushi4.jpeg" alt="foto do prato 4"> 
+                    </div>
+                </div>
+            </section>
+            <!-- BLOCO PIZZA -->
+            <section class="Dia-da-semana" id="pizza">                
+                <h1>Pizza</h1>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Pizza Margherita</h2>
+                            <p>Molho de tomate, queijo mozzarella, tomates fatiados, manjericão fresco e um fio de azeite de oliva.</p>
+                            <div class="price">R$ 25,00 (tamanho médio: 8 fatias)</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/Pizza1.jpeg" alt="foto do prato 1"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Pizza Pepperoni</h2>
+                            <p>Molho de tomate, queijo mozzarella e generosas fatias de pepperoni, levemente picante.</p>
+                            <div class="price">R$ 28,00 (tamanho médio: 8 fatias)</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/Pizza2.jpeg" alt="foto do prato 2"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Pizza Quatro Queijos</h2>
+                            <p>Uma mistura cremosa de queijo mozzarella, queijo cheddar, queijo gorgonzola e queijo parmesão.</p>
+                            <div class="price">R$ 30,00 (tamanho médio: 8 fatias)</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/Pizza3.jpeg" alt="foto do prato 3"> 
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="frame">
+                        <div class="item-info">
+                            <h2>Pizza Vegetariana</h2>
+                            <p>Molho de tomate, queijo mozzarella, cogumelos fatiados, pimentões coloridos, cebolas e azeitonas pretas.</p>
+                            <div class="price">R$ 26,00 (tamanho médio: 8 fatias)</div>
+                        </div>                    
+                        <img src="/comanda/resoucers/IMG/Pizza4.jpeg" alt="foto do prato 4"> 
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
+
